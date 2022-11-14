@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
 /*
   * CSS RESET BY @n53337
 */
@@ -33,6 +34,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-family: "Inter", sans-serif;
 }
 
 /* Make images easier to work with */
