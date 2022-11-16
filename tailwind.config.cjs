@@ -11,6 +11,9 @@ module.exports = {
       darkblue: "hsl(240, 100%, 5%)",
       lightblue: "hsl(236, 13%, 42%)",
     },
+    minWidth: {
+      half: "50%",
+    },
   },
   plugins: [],
 };

@@ -24,8 +24,12 @@ export default function Header() {
 
   const toogleIcon = (e) => {
     e.target.dataset.icon = e.target.dataset.icon === "open" ? "close" : "open";
-    console.log(e.target.dataset.icon);
     e.target.src = e.target.dataset.icon === "open" ? icon : iconClose;
+    if (e.target.dataset.icon === "open") {
+      e.target.nextSibling.classList.add("hidden");
+    } else {
+      e.target.nextSibling.classList.remove("hidden");
+    }
   };
 
   return (
@@ -33,12 +37,18 @@ export default function Header() {
       <img className="w-12 sm:w-20" src={logo} alt="website logo" />
       <nav className="hidden sm:flex sm:gap-8">{headerList}</nav>
       <img
-        className="sm:hidden"
+        className="sm:hidden z-50 cursor-pointer"
         src={icon}
         alt="toogle menu"
         onClick={toogleIcon}
         data-icon="open"
       />
+      <nav
+        className="sm:hidden absolute h-screen top-0 right-0 bg-white shadow-2xl flex flex-col px-20 content-center
+      justify-center gap-10 text-center min-w-[50%] hidden"
+      >
+        {headerList}
+      </nav>
     </header>
   );
 }
