@@ -33,7 +33,7 @@ export default function Header() {
   };
 
   return (
-    <header className="px-10 py-5 flex justify-between items-center">
+    <header className="p-5 sm:px-10 sm:py-5 flex justify-between items-center">
       <img className="w-12 sm:w-20" src={logo} alt="website logo" />
       <nav className="hidden sm:flex sm:gap-8">{headerList}</nav>
       <img
@@ -45,7 +45,7 @@ export default function Header() {
       />
       <nav
         className="sm:hidden absolute h-screen top-0 right-0 bg-white shadow-2xl flex flex-col px-20 content-center
-      justify-center gap-10 text-center min-w-[50%] hidden"
+      justify-center gap-10 text-center min-w-[50%] hidden "
       >
         {headerList}
       </nav>
