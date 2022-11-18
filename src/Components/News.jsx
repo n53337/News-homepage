@@ -6,7 +6,7 @@ export default function News({ news }) {
         return (
           <div
             className="py-5 flex flex-col gap-2 border-b border-blue"
-            key={title}
+            key={title.slice(0, 6)}
           >
             <h3 className="text-white font-bold text-base sm:text-xl hover:text-orange cursor-pointer">
               {title}

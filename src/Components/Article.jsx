@@ -12,14 +12,10 @@ export default function Article({
       </picture>
       <article className="flex flex-col gap-5 sm:grid sm:grid-cols-2">
         <h1 className="text-4xl font-bold place-self-center sm:text-5xl">
-          Lorem ipsum dolor sit.
+          {articleTitle}
         </h1>
         <div className="flex flex-col gap-5">
-          <p className="text-lightblue">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-            corrupti reiciendis aspernatur reprehenderit nam adipisci mollitia,
-            quam tempora impedit molestiae.
-          </p>
+          <p className="text-lightblue">{articleContent}</p>
           <button className="px-10 py-3 bg-red uppercase text-white font-semibold text-sm tracking-widest hover:bg-darkblue w-fit">
             Read More
           </button>
