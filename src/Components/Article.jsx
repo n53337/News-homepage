@@ -5,7 +5,7 @@ export default function Article({
   articleContent,
 }) {
   return (
-    <div className="p-5 sm:px-10 sm:py-5 grid gap-5">
+    <div className="col-start-1 col-end-3 p-5 sm:px-10 sm:py-5 grid gap-5">
       <picture>
         <source media="(min-width:640px)" srcSet={articleImgDesktop} />
         <img src={articleImgMobile} alt="article image" />

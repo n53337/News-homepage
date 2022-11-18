@@ -8,9 +8,11 @@ export default function App() {
   return (
     <>
       <Header />
-      <Article articleImgDesktop={webDesktop} articleImgMobile={webMobile} />
-      <New />
-      <Related />
+      <main className="grid grid-cols-3">
+        <Article articleImgDesktop={webDesktop} articleImgMobile={webMobile} />
+        <New />
+        <Related />
+      </main>
     </>
   );
 }
