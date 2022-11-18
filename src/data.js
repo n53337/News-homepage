@@ -32,18 +32,18 @@ export const related = [
     head: "01",
     title: "Reviving Retro PCs",
     body: "What happens when old PCs are given modern upgrades?",
-    img: { retroPc },
+    img: retroPc,
   },
   {
     head: "02",
     title: "Top 10 Laptops of 2022",
     body: "Our best picks for various needs and budgets.",
-    img: { laptop },
+    img: laptop,
   },
   {
     head: "03",
     title: "The Growth of Gaming",
     body: "How the pandemic has sparked fresh opportunities.",
-    img: { gaming },
+    img: gaming,
   },
 ];

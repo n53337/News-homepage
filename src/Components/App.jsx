@@ -1,4 +1,4 @@
-import { news, article } from "./../data";
+import { news, article, related } from "./../data";
 import Header from "./Header";
 import Article from "./Article";
 import New from "./News";
@@ -9,14 +9,9 @@ export default function App() {
     <>
       <Header />
       <main className="sm:grid sm:grid-cols-3">
-        <Article
-          articleImgDesktop={article.img.desktop}
-          articleImgMobile={article.img.mobile}
-          articleTitle={article.title}
-          articleContent={article.content}
-        />
+        <Article article={article} />
         <New news={news} />
-        <Related />
+        <Related related={related} />
       </main>
     </>
   );
