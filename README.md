@@ -5,6 +5,6 @@ a mini responsive page built with `react` and `tailwindcss`
 
 ### Get Started
 
-1- clone this repo
-2- install all dependencies using `npm install`
-3- start the developement server using `npm run dev`
+- clone this repo
+- install all dependencies using `npm install`
+- start the developement server using `npm run dev`
